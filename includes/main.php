@@ -16,7 +16,7 @@ class main extends BaseClass {
 					$pageName = 'home';
 					break;
 				case '2':
-					$pageName = 'staff';				
+					$pageName = 'store';				
 					break;
 				case '3':
 					$pageName = 'carousel';

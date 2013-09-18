@@ -32,7 +32,8 @@ class config {
 									'enrollment'			=> 'Enrollment.html',
 									'staff'					=> 'staff.html',
                                     'register'              => 'register.html',
-                                    'home'                  => 'harvestCoffeeHome.html'
+                                    'home'                  => 'harvestCoffeeHome.html',
+                                    'store'                 => 'test.html'
                                 ),             
 
         );     
