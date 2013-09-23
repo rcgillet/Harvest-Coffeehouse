@@ -4,8 +4,9 @@
 
 body {
   background-color: rgba(245, 245, 245, 1);
-  background-image: url("../img/burlap2.jpg");
+  background-image: url("../img/burlapNew.jpg");
   color: rgba(71, 65, 52, 1);
+  font-family: "Verdana", Helvetica, Arial, sans-serif;
 }
 
 h2:before {
@@ -75,19 +76,24 @@ h2:after {
 }
 
 #containColor {
-	background-color: rgba(224, 220, 209, .9);
+	border: 8px solid rgba(116, 11, 18, .9);
+	border-top: none;
+	border-bottom: none;
+	background-color: rgba(224, 220, 209, 1);
 }
 
 .mainContent h1 {
+	font-family: "Mensch";
 	font-size: 2.5em;
 	text-align: center;
-	color: rgba(45, 55, 71, 1);
+	color: rgba(212, 69, 33, 1);
 }
 
 .mainContent h2 {
 	font-size: 2em;
 	color: rgba(45, 55, 71, 1);
 	margin-top: 20px;
+	font-family: "Mensch";
 }
 
 .mainContent{
