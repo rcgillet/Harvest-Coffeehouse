@@ -2,6 +2,58 @@
 	color: #999999;
 }*/
 
+#punk-background-image {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 800px;
+width: 100%;
+left: 0;
+margin: 0;
+padding: 0;
+text-align: center;
+/*z-index: -1;*/
+overflow: hidden;
+}
+
+#punk-background-image .a-area-slideshow-bg-item, #punk-background-image video, #punk-background-image img.placeholder {
+display: block;
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: 0;
+padding: 0;
+transition: opacity .5s;
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+}
+
+.imageText {
+	font-family: 'marvel',sans-serif;
+	padding: 100px 50px;
+	position: absolute;
+	color: rgba(255, 255, 255, .9);
+	/*background-color: rgba(0, 0, 0, .2);*/
+}
+
+.imageText h1 {
+	font-size: 75px;
+	font-weight: 300;
+	line-height: 1em;
+}
+
+.imageText p {
+	padding-top: 25px;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
 body {
   background-color: rgba(245, 245, 245, 1);
   background-image: url("../img/burlapNew.jpg");
@@ -44,6 +96,7 @@ h2:after {
 
 .nav {
 	max-height: 20px;
+	font-size: 1.2em;
 }
 
 .navbar .container {
@@ -57,8 +110,8 @@ h2:after {
 	/*background-color: rgba(148, 140, 123, .7);*/
 
 .navbar-inverse .nav .active > a {
-	background-color: rgba(224, 220, 209, .7);
-	color: #0C0E0E;
+	background-color: rgba(224, 220, 209, .3);
+	color:  #ECEDF0;
 	border: rgba(0, 0, 0, .2);
 }
 
@@ -90,14 +143,16 @@ h2:after {
 }
 
 .mainContent h2 {
-	font-size: 2em;
+	font-size: 3em;
 	color: rgba(45, 55, 71, 1);
 	margin-top: 20px;
 	font-family: "Mensch";
-}
+	padding-bottom: 25px;
+}	
 
 .mainContent{
 	padding: 20px;
+	margin-top: 650px;
 }
 
 .features {
@@ -156,10 +211,9 @@ hr {
 }
 
 .wrapper {
-	max-width: 800px;
-	padding: 0 40px;
-	margin: 0 auto;
-	text-align: center; 
+	/*max-width: 800px;*/
+	/*padding: 0 40px;*/
+	/*margin: 0 auto;*/
 	font-size: 1.2em;
 }
 
