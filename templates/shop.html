@@ -60,31 +60,31 @@
           <hr>
 
           <div class="menu">
-            <div class="accordion">
+            <div class="accordion" id="itemList">
               <div class="accordion-group cbp-ig-grid">
                 <div class="accordion-heading country">              
-                  <a class="accordion-toggle" data-toggle="collapse" href="#expandBlends">
+                  <a class="accordion-toggle" data-toggle="collapse" id="blendExpand" href="#expandBlends">
                     <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
                     <h3 class="cbp-ig-title">Blends</h3>
                     <span class="cbp-ig-category">Choose from our signature blends</span>
                   </a>
                 </div>
                 <div class="accordion-heading country">
-                  <a class="accordion-toggle" data-toggle="collapse" href="#expandDecafBlends">
+                  <a class="accordion-toggle" data-toggle="collapse" id="decafBlendExpand" href="#expandDecafBlends">
                     <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
                     <h3 class="cbp-ig-title">Decaf Blends</h3>
                     <span class="cbp-ig-category">Choose from our signature decaf blends</span>
                   </a>
                 </div>
                 <div class="accordion-heading country">
-                  <a class="accordion-toggle" data-toggle="collapse" href="#expandFlavored">
+                  <a class="accordion-toggle" data-toggle="collapse" id="flavoredExpand" href="#expandFlavored">
                     <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
                     <h3 class="cbp-ig-title">Flavored</h3>
                     <span class="cbp-ig-category">Choose from our signature flavors</span>
                   </a>
                 </div>
                 <div class="accordion-heading country">
-                  <a class="accordion-toggle" data-toggle="collapse" href="#expandDecafFlavored">
+                  <a class="accordion-toggle" data-toggle="collapse" id="decafFlavoredExpand" href="#expandDecafFlavored">
                     <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
                     <h3 class="cbp-ig-title">Decaf Flavored</h3>
                     <span class="cbp-ig-category">Choose from our signature decaf flavors</span>
@@ -169,6 +169,59 @@
     <script src="../js/coffee.js"></script>
 
     <script>      
+
+      $('#blendExpand').click(function() {
+        if ($('#expandDecafBlends').hasClass("in")) {
+          $('#expandDecafBlends').collapse('toggle');
+        }
+        if ($('#expandFlavored').hasClass("in")) {
+          $('#expandFlavored').collapse('toggle');
+        }
+        if ($('#expandDecafFlavored').hasClass("in")) {
+          $('#expandDecafFlavored').collapse('toggle');
+        }
+        $('#expandBlends').collapse('toggle');
+      });
+
+      $('#decafBlendExpand').click(function() {
+        if ($('#expandBlends').hasClass("in")) {
+          $('#expandBlends').collapse('toggle');
+        }
+        if ($('#expandFlavored').hasClass("in")) {
+          $('#expandFlavored').collapse('toggle');
+        }
+        if ($('#expandDecafFlavored').hasClass("in")) {
+          $('#expandDecafFlavored').collapse('toggle');
+        }
+        $('#expandDecafBlends').collapse('toggle');
+      });
+
+      $('#flavoredExpand').click(function() {
+        if ($('#expandBlends').hasClass("in")) {
+          $('#expandBlends').collapse('toggle');
+        }
+        if ($('#expandDecafBlends').hasClass("in")) {
+          $('#expandDecafBlends').collapse('toggle');
+        }
+        if ($('#expandDecafFlavored').hasClass("in")) {
+          $('#expandDecafFlavored').collapse('toggle');
+        }
+        $('#expandFlavored').collapse('toggle');
+      });
+
+      $('#decafFlavoredExpand').click(function() {
+        if ($('#expandBlends').hasClass("in")) {
+          $('#expandBlends').collapse('toggle');
+        }
+        if ($('#expandDecafBlends').hasClass("in")) {
+          $('#expandDecafBlends').collapse('toggle');
+        }
+        if ($('#expandFlavored').hasClass("in")) {
+          $('#expandFlavored').collapse('toggle');
+        }
+        $('#expandDecafFlavored').collapse('toggle');
+      });
+
 
       $.each(Blends, function (i, item) {
           $('#blends').append('<li><a class="cbp-vm-image" href="#"><i class="icon-coffee icon-large icon-align-center"></i></a>' +
