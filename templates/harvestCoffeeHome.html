@@ -28,7 +28,7 @@
     <div class='row-fluid'>
       <div class="container" id='containColor'>
         <div id="punk-background-image">
-          <img class="a-area-slideshow-bg-item is-shown" src="img/homePage.gif">
+          <!-- <img class="a-area-slideshow-bg-item is-shown" src="img/test.gif"> -->
         </div>
         <div class="navbar navbar-inverse">
           <a class="brand" href="#"><img src="img/logoNOSHADOW.png"></a>
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="span10 imageText">
+        <div class="span6 imageText">
           <h1 class="text-center">A MULTI-PURPOSE <br />COFFEE SHOP</h1>
           <p class="wrapper lead text-center">We are a full-service coffeehouse, used bookstore, live music venue, Wi-Fi hotspot, and local art gallery. We feature a wide variety of fresh-roasted flavored, blends, and origin coffees. Our coffee is available for purchase at our store in half lb. or full lb. sizes, and can be purchased whole bean, or we will be happy to grind it for you. We also carry a selection of our own special label pre-packaged coffees.</p>
         </div>
@@ -119,6 +119,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/jquery.js"></script>
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/bootstrap-transition.js"></script>
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/bootstrap-alert.js"></script>
@@ -132,8 +133,11 @@
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/bootstrap-collapse.js"></script>
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/bootstrap-carousel.js"></script>
     <script src="../Harvest-Coffeehouse/flatstrap-master/assets/js/bootstrap-typeahead.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
     <script>
+      $("#punk-background-image").backstretch("img/test.gif");
+
       $(function() {
          var maxHeight=0;
          $('.span4').each(function(){
