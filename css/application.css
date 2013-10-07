@@ -38,7 +38,7 @@ transition: opacity .5s;
 	font-family: 'marvel',sans-serif;
 	padding: 100px 50px;
 	position: absolute;
-	color: rgba(255, 255, 255, .9);
+	color: rgba(255, 255, 255, 1);
 	/*background-color: rgba(0, 0, 0, .2);*/
 }
 
@@ -46,12 +46,16 @@ transition: opacity .5s;
 	font-size: 75px;
 	font-weight: 300;
 	line-height: 1em;
+	text-align: left;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .imageText p {
 	padding-top: 25px;
 	font-size: 1.5em;
 	font-weight: lighter;
+	text-align: left;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 body {
@@ -113,10 +117,12 @@ h2:after {
 	background-color: rgba(224, 220, 209, .3);
 	color:  #ECEDF0;
 	border: rgba(0, 0, 0, .2);
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .navbar-inverse .nav > li > a {
 	color: #ECEDF0;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .navbar-inverse .brand {
