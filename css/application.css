@@ -37,14 +37,15 @@ transition: opacity .5s;
 
 .imageText {
 	font-family: 'marvel',sans-serif;
-	padding: 100px 50px;
+
+	padding: 50px 50px;
 	position: absolute;
 	color: rgba(255, 255, 255, 1);
 	/*background-color: rgba(0, 0, 0, .2);*/
 }
 
 .imageText h1 {
-	font-size: 65px;
+	font-size: 27px;
 	font-weight: 300;
 	line-height: 1em;
 	text-align: right;
@@ -53,7 +54,7 @@ transition: opacity .5s;
 
 .imageText p {
 	padding-top: 25px;
-	font-size: 1.5em;
+	font-size: em;
 	font-weight: lighter;
 	text-align: right;
 	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
