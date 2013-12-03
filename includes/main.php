@@ -17,24 +17,7 @@ class main extends BaseClass {
 					break;
 				case '2':
 					$pageName = 'store';				
-					break;
-				case '3':
-					$pageName = 'carousel';
-					break;
-				case '4':
-					$pageName = 'hero';				
-					break;
-				case '5':
-					$pageName = 'enrollment';				
-					break;
-				case '6':
-					$pageName = 'starter-template';				
-					break;				
-				case '7':
-					$pageName = 'signin';				
-					break;				
-				default:
-					$pageName = 'index';									
+					break;							
 			}
 		} else {
 			$pageName = 'home';				

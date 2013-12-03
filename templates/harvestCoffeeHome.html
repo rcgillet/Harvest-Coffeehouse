@@ -1,6 +1,6 @@
 <html lang="en"><head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>The Harvest Coffeeehouse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -38,16 +38,65 @@
               </a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
+                  <li class="active"><a href="/?page=1">Home</a></li>
                   <li><a href="#about">Contact Us</a></li>                    
-                  <li><a href="#contact">Links</a></li>                  
-                  <li><a href="#contact">Download Our Menu</a></li>                  
+                  <li><a href="/?page=2">Shop</a></li>                  
+                  <li><a href="#contact">Download Our Menu</a></li>  
+                  <li><a href="#contact" role="button" data-toggle="modal">Contact</a></li>                
                 </ul>
                 <ul class="nav pull-right">
                   <li>
                     <a href="https://www.facebook.com/theharvestcoffeehouse" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a>
                  </li>
                 </ul>
+                <!-- Modal Form -->
+                <div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Contact Us</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal" name="contactForm" method="post" action="includes/emailForm.php">
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="Email">Email:</label>
+                      <div class="controls">
+                      <input id="email" name="email" type="text" placeholder="" class="input-large">
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="name">Name:</label>
+                      <div class="controls">
+                      <input id="name" name="name" type="text" placeholder="" class="input-large">
+                      
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="phoneNumber">Phone Number:</label>
+                      <div class="controls">
+                      <input id="phoneNumber" name="phoneNumber" type="text" placeholder="" class="input-large">
+                      
+                      </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="control-group">
+                      <label class="control-label" for="comment">Comment/Question</label>
+                      <div class="controls">                     
+                      <textarea id="comment" name="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+                      <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                    </form>
+                  </div>          
+                </div>
               </div><!--/.nav-collapse -->
             </div>
           </div>
@@ -67,21 +116,65 @@
         <div class="mainContent span12">
           <h2 class="text-center">What we have to offer</h2>
           <div class="row-fluid features">
-            <div class="well span4">
-                <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+            <div id="myCarousel" class="carousel slide">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item">
+                  <div class="well span4">
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-coffee icon-5x "></i>                
+                    <p class='featureP'>We offer a wide variety of specialty coffee drinks such as Mochas, Lattes, Cappuccinos, Americanos, Smoothies, Frappe, Chai Tea, Loose leaf or bagged Tea, and many of our own custom creations such as our famous Candy Bar Mocha, Bavarian Breve, French Kiss and many, many more!</p>
+                  </div>            
+                  <div class="well span4" >
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-signal icon-5x "></i>
+                    <p class='featureP'>The Harvest Coffeehouse offers free Wi-Fi access to our customers. If you need a place just to stop and check your e-mail, or spend a few hours working on that online college course we are your place!</p>
+                  </div>
+                  <div class="well span4" id="last">
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-calendar icon-5x "></i>
+                    <p class='featureP'>The Harvest Coffeehouse is a great place to plan your next event. Here you can fill out an application for your event and we will be in contact with you to help you set up your specific occassion.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="well span4">
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-book icon-5x "></i>                
+                    <p class='featureP'>We have a large bookshelf filled with used books available for purchase or simply to enjoy while sitting on one of our comfy couches sipping a freshly-made Cappuccino, Espresso, or hot tea.</p>
+                  </div>            
+                  <div class="well span4" >
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-music icon-5x "></i>
+                    <p class='featureP'>The Harvest Coffeehouse is gaining a reputation as a place to see some of the best live music in the region. We regularly bring in some of the best talent from local artists, throughout the State of Michigan and beyond. We feature Acoustic, Jazz, Folk, Blues, Rock, and Christian music on most Friday and Saturday nights.</p>
+                  </div>
+                  <div class="well span4" id="last">
+                    <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+                    <i class="icon-shopping-cart icon-5x "></i>
+                    <p class='featureP'>Soon we will have a shop set up that will allow you to buy your favorite merchandise that the Harvest Coffeehouse has to offer all from the comfort of your home.</p>
+                  </div>
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+              <!-- Carousel nav -->
+              <a class="nextCarousel btn left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="nextCarousel btn right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+
+            <!-- <div class="well span4">                        
                 <i class="icon-coffee icon-5x "></i>                
                 <p class='featureP'>We offer a wide variety of specialty coffee drinks such as Mochas, Lattes, Cappuccinos, Americanos, Smoothies, Frappe, Chai Tea, Loose leaf or bagged Tea, and many of our own custom creations such as our famous Candy Bar Mocha, Bavarian Breve, French Kiss and many, many more!</p>
             </div>            
-            <div class="well span4" >
-                <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+            <div class="well span4" >               
                 <i class="icon-signal icon-5x "></i>
                 <p class='featureP'>The Harvest Coffeehouse offers free Wi-Fi access to our customers. If you need a place just to stop and check your e-mail, or spend a few hours working on that online college course we are your place!</p>
             </div>
-            <div class="well span4" id="last">
-                <!-- <img src="img/backView.jpg" alt="" class="img-polaroid"> -->            
+            <div class="well span4" id="last">                
                 <i class="icon-book icon-5x "></i>
                 <p class='featureP'>The Harvest Coffeehouse is a great place to come hang out with friends, family, business associates, or to just come and spend some quality “me” time all by yourself. We have a large bookshelf filled with used books available for purchase or simply to enjoy while sitting on one of our comfy couches sipping a freshly-made Cappuccino, Espresso, or hot tea.</p>
-            </div>
+            </div> -->
           </div>
           <div id='map'>
             <h2 class="text-center">Map to Harvest</h2>

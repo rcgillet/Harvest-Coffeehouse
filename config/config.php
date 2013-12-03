@@ -20,20 +20,8 @@ class config {
 
         $this->template = array(   
             'appTemplates'    => array (
-                                    'mainTemplate'  		=> 'mainTemplate.html',
-                                    'index'         		=> 'index.html',
-									'marketing-narrow' 		=> 'marketing-narrow.html',
-									'fluid' 				=> 'fluid.html',
-									'hero'	 				=> 'hero.html',
-									'carousel' 				=> 'carousel.html',
-									'marketing-alternate'	=> 'marketing-alternate.html',
-									'signin' 				=> 'signin.html',
-									'starter-template'		=> 'starter-template.html',
-									'enrollment'			=> 'Enrollment.html',
-									'staff'					=> 'staff.html',
-                                    'register'              => 'register.html',
                                     'home'                  => 'harvestCoffeeHome.html',
-                                    'store'                 => 'test.html'
+                                    'store'                 => 'shop.html'
                                 ),             
 
         );     
