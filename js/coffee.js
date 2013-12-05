@@ -18,7 +18,7 @@ var Blends = [
 	"description": "Medium Roast"
 },
 {
-	"name": "Bolivia (Fair Trade/Organic", 
+	"name": "Bolivia (Fair Trade/Organic)", 
 	"onePound": "16.00",
 	"halfPound": "8.00",
 	"description": "Dark Roast"
