@@ -39,16 +39,64 @@
               </a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#about">Contact Us</a></li>                    
-                  <li><a href="#contact">Links</a></li>                  
-                  <li><a href="#contact">Download Our Menu</a></li>                  
+                  <li class="active"><a href="/?page=1">Home</a></li>
+                  <li><a href="/?page=2">Shop</a></li>                  
+                  <!-- <li><a href="#contact">Download Our Menu</a></li>   -->
+                  <li><a href="#contact" role="button" data-toggle="modal">Contact</a></li>                
                 </ul>
                 <ul class="nav pull-right">
                   <li>
                     <a href="https://www.facebook.com/theharvestcoffeehouse" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a>
                  </li>
                 </ul>
+                <!-- Modal Form -->
+                <div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Contact Us</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal" name="contactForm" method="post" action="includes/emailForm.php">
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="Email">Email:</label>
+                      <div class="controls">
+                      <input id="email" name="email" type="text" placeholder="" class="input-large">
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="name">Name:</label>
+                      <div class="controls">
+                      <input id="name" name="name" type="text" placeholder="" class="input-large">
+                      
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="control-group">
+                      <label class="control-label" for="phoneNumber">Phone Number:</label>
+                      <div class="controls">
+                      <input id="phoneNumber" name="phoneNumber" type="text" placeholder="" class="input-large">
+                      
+                      </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="control-group">
+                      <label class="control-label" for="comment">Comment/Question</label>
+                      <div class="controls">                     
+                      <textarea id="comment" name="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+                      <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                    </form>
+                  </div>          
+                </div>
               </div><!--/.nav-collapse -->
             </div>
           </div>
